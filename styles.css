@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 95%);
+}
+
+img {
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+}
+
+.btn {
+  padding: 0.5rem 0.8rem;
+  margin-top: 1rem;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+.card {
+  padding: 1.5rem;
+}
+
+.card__sedans {
+  background-color: var(--bright-orange);
+  color: hsl(0, 0%, 95%);
+  border-radius: 10px 10px 0 0;
+}
+
+.card__sedans .btn {
+  color: var(--bright-orange);
+}
+
+.card__SUV {
+  background-color: var(--dark-cyan);
+  color: hsl(0, 0%, 95%);
+}
+
+.card__SUV .btn {
+  color: var(--dark-cyan);
+}
+
+.card__luxury {
+  background-color: var(--very-dark-cyan);
+  color: hsl(0, 0%, 95%);
+  border-radius: 0 0 10px 10px;
+}
+
+.card__luxury .btn {
+  color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 660px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .card__sedans {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card__luxury {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card {
+    padding: 45px;
+  }
+
+  .card p {
+    margin-bottom: 80px;
+  }
+}
